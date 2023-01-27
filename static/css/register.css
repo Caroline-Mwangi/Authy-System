@@ -1,0 +1,61 @@
+body{
+    background-color: #86ABA9;
+    font-family: "Fanwood Text";
+}
+
+.logo{
+    color: #b37312;
+    font-size: 40px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.main-head{
+    text-align: center;
+    font-size: 90px;
+    font-style: normal;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.mini-head{
+    color: #b37312;
+    text-align: center;
+    font-size: 33px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+input{
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 15px 15px 15px 15px;
+    width: 25%;
+    background-color: rgba(179, 115, 18, 0.5);
+    margin-left: 700px;
+    margin-bottom: 25px;
+}
+
+::placeholder{
+    color: rgb(59, 57, 57);
+}
+
+.btn{
+    margin-left: 885px;
+    margin-top: 25px;
+    border: 1px black solid;
+    padding: 8px 8px 8px 8px;
+    width: 7%;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgba(179, 115, 18, 0.9);
+    opacity: 0.7;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(0,0,0,0.9);
+    color: #b37312;
+    cursor: pointer;
+}
