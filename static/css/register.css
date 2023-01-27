@@ -59,3 +59,8 @@ input{
     color: #b37312;
     cursor: pointer;
 }
+
+i{
+    margin-left: -30px;
+    cursor: pointer;
+}

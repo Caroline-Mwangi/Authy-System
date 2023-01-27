@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/register.css' %}">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fanwood+Text" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        
     </head>
     <body>
         <h1 class="logo">AUTHY</h1>
@@ -19,7 +21,10 @@
         <input type="text" id="uname" name="uname" placeholder="Username...">
         <input type="email" id="email" name="email" placeholder="Email Address...">
         <input type="password" id="pass" name="pass" placeholder="Password...">
+        <i class="far fa-eye" id="eye"></i>
         <input type="password" id="cpass" name="cpass" placeholder="Confirm Password...">
+        <i class="far fa-eye" id="cpeye"></i>
         <button class="btn">Submit</button>
+    <script src="{% static 'js/script.js' %}"></script>
     </body>
 </html>
