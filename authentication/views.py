@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
 
 def home(request):
     return render(request, "authentication/index.html")
@@ -26,8 +27,29 @@ def register(request):
     
     return render(request, "authentication/register.html")
 
-def login(request):
+def log_in(request):
+    if request.method == 'POST':
+        username = request.POST['uname']
+        password = request.POST['pass']
+        
+        #Authenticate user
+        user = authenticate(username=username, password=password) 
+        
+        if user is not None:
+            login(request, user)
+            first_name = user.first_name
+            return render(request, "authentication/landing.html", {'first_name' : first_name} )
+        else:
+            messages.error(request, "Invalid credentials")
+            return redirect('home')
+        
     return render(request, "authentication/login.html")
 
-def logout(request):
-    pass
+def log_out(request):
+    logout(request)
+    messages.success(request, "Logged out successfully :)")
+    return redirect('home')
+
+def landing(request):
+    return render(request, "authentication/landing.html")
+    
