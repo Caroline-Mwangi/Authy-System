@@ -21,7 +21,7 @@ def register(request):
         
         myuser.save()
         
-        messages.success(request, "Yaayy! Your Account Has Been Successfully Created.")
+        messages.success(request, "Yaayy! Your Details Has Been Successfully Submitted. Check your email for verification.")
         
         return redirect('login')
     
@@ -41,7 +41,7 @@ def log_in(request):
             return render(request, "authentication/landing.html", {'first_name' : first_name} )
         else:
             messages.error(request, "Invalid credentials")
-            return redirect('home')
+            return redirect('login')
         
     return render(request, "authentication/login.html")
 
