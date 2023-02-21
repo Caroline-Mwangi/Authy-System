@@ -14,7 +14,6 @@ from pathlib import Path
 import environ
 import os
 from .info import *
-import django_heroku
 
 env = environ.Env()
 environ.Env.read_env()
@@ -37,7 +36,7 @@ EMAIL_USE_SSL = EMAIL_USE_SSL
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -139,4 +138,5 @@ STATICFILES_DIRS = [BASE_DIR/'static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+import django_heroku
 django_heroku.settings(locals())
