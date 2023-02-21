@@ -14,6 +14,9 @@ from pathlib import Path
 import environ
 import os
 from .info import *
+import django_heroku
+
+django_heroku.settings(locals())
 
 env = environ.Env()
 environ.Env.read_env()
