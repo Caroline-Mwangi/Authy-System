@@ -16,8 +16,6 @@ import os
 from .info import *
 import django_heroku
 
-django_heroku.settings(locals())
-
 env = environ.Env()
 environ.Env.read_env()
 
@@ -140,3 +138,5 @@ STATICFILES_DIRS = [BASE_DIR/'static']
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())
