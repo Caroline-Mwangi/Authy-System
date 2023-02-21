@@ -23,7 +23,8 @@ body{
     font-size: 45px;
     margin-top: 0px;
     margin-bottom: 150px;
-    margin-left: 450px;
+    position: relative;
+    left:22%;
     border: 1px black solid;
     background-color: rgba(179, 115, 18, 0.95);
     opacity: 0.7;
@@ -36,7 +37,7 @@ body{
     float: right;
     border: 2px black solid;
     padding: 15px 15px 15px 15px;
-    width: 7%;
+    width: 10%;
     font-size: 17px;
     border-radius: 30px;
     background-color: rgba(179, 115, 18, 0.95);

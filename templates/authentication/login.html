@@ -29,9 +29,11 @@
         <form action="/login" method="post">
         {% csrf_token %}
             <input type="text" id="uname" name="uname" placeholder="Username/Email...">
+            <br>
 
             <input type="password" id="pass" name="pass" placeholder="Password...">
             <i class="far fa-eye" id="eye"></i>
+            <br>
 
             <button class="btn">Submit</button>
         </form>
