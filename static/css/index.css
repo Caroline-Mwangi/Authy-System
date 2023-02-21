@@ -1,6 +1,10 @@
 body{
     background-color: #86ABA9;
     font-family: "Fanwood Text";
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 .logo{
@@ -22,7 +26,7 @@ body{
     text-align: center;
     font-size: 33px;
     margin-top: 0px;
-    margin-bottom: 150px;
+    margin-bottom: 55px;
 }
 
 .btn{
@@ -48,4 +52,16 @@ body{
     left: 35%;
 }
 
+.alert{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 17%;
+    position: relative;
+    left: 41%;
+    background-color: rgba(241, 119, 119, 0.6);
+}
 
