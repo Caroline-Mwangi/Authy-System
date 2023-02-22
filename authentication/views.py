@@ -48,7 +48,7 @@ def register(request):
         myuser.is_active = False
         myuser.save()
         
-        messages.success(request, "Yaayy! Your Details Has Been Successfully Submitted. Check your email for verification before you login.")
+        messages.success(request, "Yaayy! Your Details Have Been Successfully Submitted. Check your email for verification before you login.")
         
         #Welcome Email
         subject = "Welcome To Authy"
